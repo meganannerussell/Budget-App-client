@@ -1,0 +1,66 @@
+.Header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 35px;
+}
+
+.Img {
+  position: absolute;
+  width: 120%;
+  z-index: -10;
+  height: 300px;
+}
+
+.incomeContainer {
+  flex-direction: row;
+  background-color: #3eb6b0;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.expenseContainer {
+  width: 300px;
+  background-color: #dd4343;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 6px;
+  /* border-color: #DD4343;
+  border-width: 2px;
+  border-style: double; */
+}
+
+.alert {
+  padding: 0.75rem 1.25rem;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  /* width: 90%; */
+  margin: 2rem auto 0 auto;
+  border-radius: 2px;
+  text-transform: capitalize;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+}
+.alert-danger {
+  background-color: #dd4343;
+}
+.alert-success {
+  background-color: #3eb6b0;
+}
+
+.lists {
+  padding-top: 40px;
+}
