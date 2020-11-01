@@ -97,13 +97,13 @@ function App() {
     setAmount("");
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = async(id) => {
     deleteIncome(id);
     const updatedIncomes = incomes.filter((income) => income.income_id !== id);
     // const updatedExpenses = expenses.filter((expense) => expense.id !== id);
     setIncomes(updatedIncomes);
     // setExpenses(updatedExpenses);
-    deleteExpense(id);
+    await deleteExpense(id);
     const updatedExpenses = expenses.filter(
       (expense) => expense.expense_id !== id
     );
