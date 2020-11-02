@@ -17,6 +17,10 @@ import {
 } from "./actions";
 import { Container, Grid } from "semantic-ui-react";
 
+const env = runtimeEnv();
+
+export const apiBaseUrl = env.REACT_APP_API_URL || "http://localhost:5000";
+
 function App() {
   const [incomes, setIncomes] = useState([]);
   const [expenses, setExpenses] = useState([]);
