@@ -16,6 +16,7 @@ import {
   getIncomes,
 } from "./actions";
 import { Container, Grid } from "semantic-ui-react";
+import runtimeEnv from "@mars/heroku-js-runtime-env";
 
 const env = runtimeEnv();
 
