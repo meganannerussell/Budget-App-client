@@ -1,3 +1,5 @@
+import { apiBaseUrl } from "./App";
+
 export const createIncome = async ({ charge, amount }) => {
   const response = await fetch(`${apiBaseUrl}/incomes`, {
     method: "POST",
